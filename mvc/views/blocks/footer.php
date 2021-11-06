@@ -12,8 +12,8 @@
                                             <img src="http://localhost/Laptrinhweb/public/images/shipping-icon/1.png" alt="Shipping Icon">
                                         </div>
                                         <div class="shipping-text">
-                                            <h2>Free Delivery</h2>
-                                            <p>And free returns. See checkout for delivery dates.</p>
+                                            <h2>Miễn phí vận chuyển</h2>
+                                            <p>Và miễn phí hoàn trả. Xem thủ tục thanh toán và ngày giao hàng.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -25,8 +25,8 @@
                                             <img src="http://localhost/Laptrinhweb/public/images/shipping-icon/2.png" alt="Shipping Icon">
                                         </div>
                                         <div class="shipping-text">
-                                            <h2>Safe Payment</h2>
-                                            <p>Pay with the world's most popular and secure payment methods.</p>
+                                            <h2>Thanh toán an toàn</h2>
+                                            <p>Trả tiền qua các hình thức thanh toán được ưa chuộng trên thế giới và bảo mật cao.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -38,8 +38,8 @@
                                             <img src="http://localhost/Laptrinhweb/public/images/shipping-icon/3.png" alt="Shipping Icon">
                                         </div>
                                         <div class="shipping-text">
-                                            <h2>Shop with Confidence</h2>
-                                            <p>Our Buyer Protection covers your purchasefrom click to delivery.</p>
+                                            <h2>Tự tin mua sắm</h2>
+                                            <p>Chương trình Bảo vệ người tiêu dùng sẽ đảm bảo tính riêng tư và an toàn thông tin khi thanh toán và giao hàng.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -51,8 +51,8 @@
                                             <img src="http://localhost/Laptrinhweb/public/images/shipping-icon/4.png" alt="Shipping Icon">
                                         </div>
                                         <div class="shipping-text">
-                                            <h2>24/7 Help Center</h2>
-                                            <p>Have a question? Call a Specialist or chat online.</p>
+                                            <h2>Trung tâm hỗ trợ 24/7</h2>
+                                            <p>Thắc mắc cần được giải đáp? Chat ngay với chúng tôi nào!</p>
                                         </div>
                                     </div>
                                 </div>
@@ -71,23 +71,23 @@
                                 <!-- Begin Footer Logo Area -->
                                 <div class="col-lg-4 col-md-6">
                                     <div class="footer-logo">
-                                        <img src="http://localhost/Laptrinhweb/public/images/menu/logo/1.jpg" alt="Footer Logo">
+                                        <img src="http://localhost/Laptrinhweb/public/images/menu/logo/1.png" alt="Footer Logo">
                                         <p class="info">
-                                            We are a team of designers and developers that create high quality HTML Template & Woocommerce, Shopify Theme.
+                                            Project webpage bán điện thoại của tiểu đội đực rựa.
                                         </p>
                                     </div>
                                     <ul class="des">
                                         <li>
-                                            <span>Address: </span>
-                                            6688Princess Road, London, Greater London BAS 23JK, UK
+                                            <span>Địa chỉ: </span>
+                                            Một nơi nào đó trên Trái Đất dưới bầu trời
                                         </li>
                                         <li>
-                                            <span>Phone: </span>
-                                            <a href="#">(+123) 123 321 345</a>
+                                            <span>Điện thoại: </span>
+                                            <a href="#">(+84) 987 654 321</a>
                                         </li>
                                         <li>
                                             <span>Email: </span>
-                                            <a href="mailto://info@yourdomain.com">info@yourdomain.com</a>
+                                            <a href="mailto://info@example.com">info@example.com</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -95,12 +95,12 @@
                                 <!-- Begin Footer Block Area -->
                                 <div class="col-lg-2 col-md-3 col-sm-6">
                                     <div class="footer-block">
-                                        <h3 class="footer-block-title">Product</h3>
+                                        <h3 class="footer-block-title">Sản phẩm</h3>
                                         <ul>
-                                            <li><a href="#">Prices drop</a></li>
-                                            <li><a href="#">New products</a></li>
-                                            <li><a href="#">Best sales</a></li>
-                                            <li><a href="#">Contact us</a></li>
+                                            <li><a href="#">Giảm giá</a></li>
+                                            <li><a href="#">Hàng mới</a></li>
+                                            <li><a href="#">Bán chạy nhất</a></li>
+                                            <li><a href="#">Liên hệ</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -108,12 +108,12 @@
                                 <!-- Begin Footer Block Area -->
                                 <div class="col-lg-2 col-md-3 col-sm-6">
                                     <div class="footer-block">
-                                        <h3 class="footer-block-title">Our company</h3>
+                                        <h3 class="footer-block-title">Về công ty</h3>
                                         <ul>
-                                            <li><a href="#">Delivery</a></li>
-                                            <li><a href="#">Legal Notice</a></li>
-                                            <li><a href="#">About us</a></li>
-                                            <li><a href="#">Contact us</a></li>
+                                            <li><a href="#">Vận chuyển</a></li>
+                                            <li><a href="#">Thông báo pháp lý</a></li>
+                                            <li><a href="#">Về chúng tôi</a></li>
+                                            <li><a href="#">Liên hệ</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -121,7 +121,7 @@
                                 <!-- Begin Footer Block Area -->
                                 <div class="col-lg-4">
                                     <div class="footer-block">
-                                        <h3 class="footer-block-title">Follow Us</h3>
+                                        <h3 class="footer-block-title">Theo dõi chúng tôi trên các nền tảng</h3>
                                         <ul class="social-link">
                                             <li class="twitter">
                                                 <a href="https://twitter.com/" data-toggle="tooltip" target="_blank" title="Twitter">
@@ -157,12 +157,12 @@
                                     </div>
                                     <!-- Begin Footer Newsletter Area -->
                                     <div class="footer-newsletter">
-                                        <h4>Sign up to newsletter</h4>
+                                        <h4>Đăng ký để nhận tin mới nhất</h4>
                                         <form action="#" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="footer-subscribe-form validate" target="_blank" novalidate>
                                            <div id="mc_embed_signup_scroll">
                                               <div id="mc-form" class="mc-form subscribe-form form-group" >
                                                 <input id="mc-email" type="email" autocomplete="off" placeholder="Enter your email" />
-                                                <button  class="btn" id="mc-submit">Subscribe</button>
+                                                <button  class="btn" id="mc-submit">Đăng ký</button>
                                               </div>
                                            </div>
                                         </form>
@@ -183,25 +183,23 @@
                                 <!-- Begin Footer Links Area -->
                                 <div class="footer-links">
                                     <ul>
-                                        <li><a href="#">Online Shopping</a></li>
-                                        <li><a href="#">Promotions</a></li>
-                                        <li><a href="#">My Orders</a></li>
-                                        <li><a href="#">Help</a></li>
-                                        <li><a href="#">Customer Service</a></li>
-                                        <li><a href="#">Support</a></li>
-                                        <li><a href="#">Most Populars</a></li>
-                                        <li><a href="#">New Arrivals</a></li>
-                                        <li><a href="#">Special Products</a></li>
-                                        <li><a href="#">Manufacturers</a></li>
-                                        <li><a href="#">Our Stores</a></li>
-                                        <li><a href="#">Shipping</a></li>
-                                        <li><a href="#">Payments</a></li>
-                                        <li><a href="#">Warantee</a></li>
-                                        <li><a href="#">Refunds</a></li>
-                                        <li><a href="#">Checkout</a></li>
-                                        <li><a href="#">Discount</a></li>
-                                        <li><a href="#">Refunds</a></li>
-                                        <li><a href="#">Policy Shipping</a></li>
+                                        <li><a href="#">Mua hàng trực tuyến</a></li>
+                                        <li><a href="#">Chương trình khuyến mãi</a></li>
+                                        <li><a href="#">Đơn hàng của tôi</a></li>
+                                        <li><a href="#">Trợ giúp</a></li>
+                                        <li><a href="#">Chăm sóc khách hàng</a></li>
+                                        <li><a href="#">Hỗ trợ</a></li>
+                                        <li><a href="#">Được ưa chuộng</a></li>
+                                        <li><a href="#">Hàng mới về</a></li>
+                                        <li><a href="#">Hàng đặc biệt</a></li>
+                                        <li><a href="#">Nhà sản xuất</a></li>
+                                        <li><a href="#">Về chúng tôi</a></li>
+                                        <li><a href="#">Vận chuyển</a></li>
+                                        <li><a href="#">Thanh toán</a></li>
+                                        <li><a href="#">Bảo hành</a></li>
+                                        <li><a href="#">Hoàn tiền</a></li>
+                                        <li><a href="#">Giảm giá</a></li>
+                                        <li><a href="#">Chính sách giao hàng</a></li>
                                     </ul>
                                 </div>
                                 <!-- Footer Links Area End Here -->
@@ -214,7 +212,7 @@
                                 <!-- Footer Payment Area End Here -->
                                 <!-- Begin Copyright Area -->
                                 <div class="copyright text-center pt-25">
-                                    <span><a href="https://www.templatespoint.net" target="_blank">Templates Point</a></span>
+                                    <span><a href="#" target="_blank">Copyright</a></span>
                                 </div>
                                 <!-- Copyright Area End Here -->
                             </div>

@@ -135,7 +135,7 @@
                             <div class="col-lg-3">
                                 <div class="logo pb-sm-30 pb-xs-30">
                                     <a href="http://localhost/Laptrinhweb/Home">
-                                        <img src="http://localhost/Laptrinhweb/public/images/menu/logo/1.jpg" alt="">
+                                        <img src="http://localhost/Laptrinhweb/public/images/menu/logo/1.png" alt="">
                                     </a>
                                 </div>
                             </div>
@@ -299,7 +299,7 @@
                                             </li>
                                             <li class="dropdown-holder"><a href="http://localhost/Laptrinhweb/Home/contact">TIN TỨC</a>
                                             </li>
-                                            <li><a href="http://localhost/Laptrinhweb/Home/contact">Liện hệ</a></li>
+                                            <li><a href="http://localhost/Laptrinhweb/Home/contact">Liên hệ</a></li>
                                             <li><a href="http://localhost/Laptrinhweb/Home/gioithieu">Giới thiệu</a></li>
                                         </ul>
                                     </nav>
