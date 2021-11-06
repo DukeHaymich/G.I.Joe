@@ -8,10 +8,26 @@ class ProductModel extends DB{
         return $data;
     }
 
+    public function insertProduct($category_id, $title, $price, $discount, $thumbnail, $description) {
+        //insert
+        $sql = "insert into product(category_id, title, price, discount, thumbnail, description, deleted ) values ('$category_id','$title', '$price','$discount','$thumbnail', '$description',0)";
+        $this->execute($sql);
+    }
+
     public function selectProduct($id){
         $sql = "select * from product where id = '$id' and deleted = 0";
         $userItem = $this->executeResult($sql, true);
         return $userItem;
+    }
+
+    public function updateProduct($id, $category_id, $title, $price, $discount, $thumbnail, $description) {
+        $sql = "update product set title = '$title', price = $price, discount = $discount, description = '$description', category_id = '$category_id', thumbnail = '$thumbnail' where id = $id";
+		$this->execute($sql);
+    }
+
+    public function selectProductDelete($id) {
+        $sql = "delete from product where id = $id";
+        $this->execute($sql);
     }
 
     public function selectProductCategory($id){
@@ -19,7 +35,12 @@ class ProductModel extends DB{
         $allProduct = $this->executeResult($sql);
         return $allProduct;
     }
-    
+
+    public function getProductOrder($idList){
+        $sql = "select * from product where id in ($idList)";
+        $cartList = $this->executeResult($sql);
+        return $cartList;
+    }
 }
 
 
