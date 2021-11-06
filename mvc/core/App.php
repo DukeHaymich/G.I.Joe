@@ -7,6 +7,9 @@ class App{
 
     function __construct(){
         $arr = $this->UrlProcess();
+        if(!$arr){
+            $arr[0] = "home";
+        }
         // Controller   Home/asas/1212
         if( file_exists("./mvc/controllers/".$arr[0].".php") ){
             $this->controller = $arr[0];
