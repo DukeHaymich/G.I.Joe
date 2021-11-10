@@ -182,6 +182,14 @@ class Home extends Controller{
             "allCategory"=>$this->allCategory
         ]);
     }
+
+    public function tintuc(){
+    
+        $this->view("home",[
+            "render"=>"tintuc",
+            "allCategory"=>$this->allCategory
+        ]);
+    }
 }
 
 ?>

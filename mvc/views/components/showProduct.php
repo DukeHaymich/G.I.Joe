@@ -27,20 +27,6 @@
                                                         </div>
                                                         <div class="product_desc">
                                                             <div class="product_desc_info">
-                                                                <div class="product-review">
-                                                                    <h5 class="manufacturer">
-                                                                        <a href="shop-left-sidebar.html">Graphic Corner</a>
-                                                                    </h5>
-                                                                    <div class="rating-box">
-                                                                        <ul class="rating">
-                                                                            <li><i class="fa fa-star-o"></i></li>
-                                                                            <li><i class="fa fa-star-o"></i></li>
-                                                                            <li><i class="fa fa-star-o"></i></li>
-                                                                            <li class="no-star"><i class="fa fa-star-o"></i></li>
-                                                                            <li class="no-star"><i class="fa fa-star-o"></i></li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
                                                                 <h4><a class="product_name" href="http://localhost/Laptrinhweb/Home/productDetail/'.$data["allProduct"][$j]["id"].'">'.$data["allProduct"][$j]["title"].'</a></h4>
                                                                 <div style="margin-top:10px" class="price-box">
                                                                     <span  class="new-price">'.number_format($data["allProduct"][$j]["price"]).' VNĐ</span>

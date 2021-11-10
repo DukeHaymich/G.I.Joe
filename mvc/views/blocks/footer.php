@@ -1,69 +1,4 @@
 <div class="footer">
-                <!-- Begin Footer Static Top Area -->
-                <div class="footer-static-top">
-                    <div class="container">
-                        <!-- Begin Footer Shipping Area -->
-                        <div class="footer-shipping pt-60 pb-55 pb-xs-25">
-                            <div class="row">
-                                <!-- Begin Li's Shipping Inner Box Area -->
-                                <div class="col-lg-3 col-md-6 col-sm-6 pb-sm-55 pb-xs-55">
-                                    <div class="li-shipping-inner-box">
-                                        <div class="shipping-icon">
-                                            <img src="http://localhost/Laptrinhweb/public/images/shipping-icon/1.png" alt="Shipping Icon">
-                                        </div>
-                                        <div class="shipping-text">
-                                            <h2>Miễn phí vận chuyển</h2>
-                                            <p>Và miễn phí hoàn trả. Xem thủ tục thanh toán và ngày giao hàng.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Li's Shipping Inner Box Area End Here -->
-                                <!-- Begin Li's Shipping Inner Box Area -->
-                                <div class="col-lg-3 col-md-6 col-sm-6 pb-sm-55 pb-xs-55">
-                                    <div class="li-shipping-inner-box">
-                                        <div class="shipping-icon">
-                                            <img src="http://localhost/Laptrinhweb/public/images/shipping-icon/2.png" alt="Shipping Icon">
-                                        </div>
-                                        <div class="shipping-text">
-                                            <h2>Thanh toán an toàn</h2>
-                                            <p>Trả tiền qua các hình thức thanh toán được ưa chuộng trên thế giới và bảo mật cao.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Li's Shipping Inner Box Area End Here -->
-                                <!-- Begin Li's Shipping Inner Box Area -->
-                                <div class="col-lg-3 col-md-6 col-sm-6 pb-xs-30">
-                                    <div class="li-shipping-inner-box">
-                                        <div class="shipping-icon">
-                                            <img src="http://localhost/Laptrinhweb/public/images/shipping-icon/3.png" alt="Shipping Icon">
-                                        </div>
-                                        <div class="shipping-text">
-                                            <h2>Tự tin mua sắm</h2>
-                                            <p>Chương trình Bảo vệ người tiêu dùng sẽ đảm bảo tính riêng tư và an toàn thông tin khi thanh toán và giao hàng.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Li's Shipping Inner Box Area End Here -->
-                                <!-- Begin Li's Shipping Inner Box Area -->
-                                <div class="col-lg-3 col-md-6 col-sm-6 pb-xs-30">
-                                    <div class="li-shipping-inner-box">
-                                        <div class="shipping-icon">
-                                            <img src="http://localhost/Laptrinhweb/public/images/shipping-icon/4.png" alt="Shipping Icon">
-                                        </div>
-                                        <div class="shipping-text">
-                                            <h2>Trung tâm hỗ trợ 24/7</h2>
-                                            <p>Thắc mắc cần được giải đáp? Chat ngay với chúng tôi nào!</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Li's Shipping Inner Box Area End Here -->
-                            </div>
-                        </div>
-                        <!-- Footer Shipping Area End Here -->
-                    </div>
-                </div>
-                <!-- Footer Static Top Area End Here -->
-                <!-- Begin Footer Static Middle Area -->
                 <div class="footer-static-middle">
                     <div class="container">
                         <div class="footer-logo-wrap pt-50 pb-35">
@@ -71,23 +6,23 @@
                                 <!-- Begin Footer Logo Area -->
                                 <div class="col-lg-4 col-md-6">
                                     <div class="footer-logo">
-                                        <img src="http://localhost/Laptrinhweb/public/images/menu/logo/1.png" alt="Footer Logo">
+                                        <img src="http://localhost/Laptrinhweb/public/images/logophonestore.png" style="width:75%;height:58px" alt="Footer Logo">
                                         <p class="info">
-                                            Project webpage bán điện thoại của tiểu đội đực rựa.
+                                            Chúng tôi là team có 4 thành viên chuyên phát triển website.    
                                         </p>
                                     </div>
                                     <ul class="des">
                                         <li>
                                             <span>Địa chỉ: </span>
-                                            Một nơi nào đó trên Trái Đất dưới bầu trời
+                                            Đại học Bách Khoa Thành phố Hồ Chí Minh
                                         </li>
                                         <li>
-                                            <span>Điện thoại: </span>
-                                            <a href="#">(+84) 987 654 321</a>
+                                            <span>Số điện thoại: </span>
+                                            <a href="#">(+84)12 543 6789</a>
                                         </li>
                                         <li>
                                             <span>Email: </span>
-                                            <a href="mailto://info@example.com">info@example.com</a>
+                                            <a href="mailto://info@yourdomain.com">contact@gmail.com</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -97,10 +32,10 @@
                                     <div class="footer-block">
                                         <h3 class="footer-block-title">Sản phẩm</h3>
                                         <ul>
-                                            <li><a href="#">Giảm giá</a></li>
-                                            <li><a href="#">Hàng mới</a></li>
-                                            <li><a href="#">Bán chạy nhất</a></li>
-                                            <li><a href="#">Liên hệ</a></li>
+                                            <li><a href="#">IPHONE</a></li>
+                                            <li><a href="#">SAMSUNG</a></li>
+                                            <li><a href="#">Xiaomi</a></li>
+                                            <li><a href="#">Oppo</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -108,12 +43,11 @@
                                 <!-- Begin Footer Block Area -->
                                 <div class="col-lg-2 col-md-3 col-sm-6">
                                     <div class="footer-block">
-                                        <h3 class="footer-block-title">Về công ty</h3>
+                                        <h3 class="footer-block-title">Về công ty của chúng tôi</h3>
                                         <ul>
-                                            <li><a href="#">Vận chuyển</a></li>
-                                            <li><a href="#">Thông báo pháp lý</a></li>
-                                            <li><a href="#">Về chúng tôi</a></li>
+                                            <li><a href="http://localhost/Laptrinhweb/Home/gioithieu">Giới thiệu</a></li>
                                             <li><a href="#">Liên hệ</a></li>
+                                            <li><a href="#">Tin tức</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -121,7 +55,7 @@
                                 <!-- Begin Footer Block Area -->
                                 <div class="col-lg-4">
                                     <div class="footer-block">
-                                        <h3 class="footer-block-title">Theo dõi chúng tôi trên các nền tảng</h3>
+                                        <h3 class="footer-block-title">Theo dõi chúng tôi</h3>
                                         <ul class="social-link">
                                             <li class="twitter">
                                                 <a href="https://twitter.com/" data-toggle="tooltip" target="_blank" title="Twitter">
@@ -155,18 +89,6 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <!-- Begin Footer Newsletter Area -->
-                                    <div class="footer-newsletter">
-                                        <h4>Đăng ký để nhận tin mới nhất</h4>
-                                        <form action="#" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="footer-subscribe-form validate" target="_blank" novalidate>
-                                           <div id="mc_embed_signup_scroll">
-                                              <div id="mc-form" class="mc-form subscribe-form form-group" >
-                                                <input id="mc-email" type="email" autocomplete="off" placeholder="Enter your email" />
-                                                <button  class="btn" id="mc-submit">Đăng ký</button>
-                                              </div>
-                                           </div>
-                                        </form>
-                                    </div>
                                     <!-- Footer Newsletter Area End Here -->
                                 </div>
                                 <!-- Footer Block Area End Here -->
@@ -175,51 +97,6 @@
                     </div>
                 </div>
                 <!-- Footer Static Middle Area End Here -->
-                <!-- Begin Footer Static Bottom Area -->
-                <div class="footer-static-bottom pt-55 pb-55">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <!-- Begin Footer Links Area -->
-                                <div class="footer-links">
-                                    <ul>
-                                        <li><a href="#">Mua hàng trực tuyến</a></li>
-                                        <li><a href="#">Chương trình khuyến mãi</a></li>
-                                        <li><a href="#">Đơn hàng của tôi</a></li>
-                                        <li><a href="#">Trợ giúp</a></li>
-                                        <li><a href="#">Chăm sóc khách hàng</a></li>
-                                        <li><a href="#">Hỗ trợ</a></li>
-                                        <li><a href="#">Được ưa chuộng</a></li>
-                                        <li><a href="#">Hàng mới về</a></li>
-                                        <li><a href="#">Hàng đặc biệt</a></li>
-                                        <li><a href="#">Nhà sản xuất</a></li>
-                                        <li><a href="#">Về chúng tôi</a></li>
-                                        <li><a href="#">Vận chuyển</a></li>
-                                        <li><a href="#">Thanh toán</a></li>
-                                        <li><a href="#">Bảo hành</a></li>
-                                        <li><a href="#">Hoàn tiền</a></li>
-                                        <li><a href="#">Giảm giá</a></li>
-                                        <li><a href="#">Chính sách giao hàng</a></li>
-                                    </ul>
-                                </div>
-                                <!-- Footer Links Area End Here -->
-                                <!-- Begin Footer Payment Area -->
-                                <div class="copyright text-center">
-                                    <a href="#">
-                                        <img src="http://localhost/Laptrinhweb/public/images/payment/1.png" alt="">
-                                    </a>
-                                </div>
-                                <!-- Footer Payment Area End Here -->
-                                <!-- Begin Copyright Area -->
-                                <div class="copyright text-center pt-25">
-                                    <span><a href="#" target="_blank">Copyright</a></span>
-                                </div>
-                                <!-- Copyright Area End Here -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Footer Static Bottom Area End Here -->
             </div>
             <!-- Footer Area End Here -->
             <!-- Begin Quick View | Modal Area -->

@@ -20,6 +20,9 @@ else if($data["render"] == "contact"){
 else if($data["render"] == "gioithieu"){
     require_once "mvc/views/components/gioithieu.php";
 }
+else if($data["render"] == "tintuc"){
+    require_once "mvc/views/components/tintuc.php";
+}
 
 
 

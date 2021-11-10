@@ -8,7 +8,7 @@
 /*----------------------------------------*/
 body {
 	color: #242424;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Rubik', sans-serif;
 	font-size: 14px;
 	font-style: normal;
 	font-weight: normal;
@@ -221,7 +221,7 @@ textarea {
 .section-title-2 > h3, 
 .section-title-2 > p {
 	color: #ffffff;
-	font-family: 'Montserrat', sans-serif;
+	font-family: roboto;
 	font-size: 30px;
 	font-style: normal;
 	font-weight: 900;
@@ -272,7 +272,7 @@ a.review-links {
 	background: #fed700 none repeat scroll 0 0;
 	color: #242424;
 	display: inline-block;
-	font-family: 'Montserrat', sans-serif;
+	font-family: Montserrat;
 	font-size: 14px;
 	font-weight: 700;
 	height: 50px;
@@ -1393,7 +1393,7 @@ textarea:focus {
 	color: #242424;
 	font-size: 13px;
 	border-radius: 15px 0 0 15px;
-	font-family: 'Montserrat',sans-serif;
+	font-family: 'Rubik',sans-serif;
 	font-weight: 400;
 	position: relative;
 }
@@ -1624,7 +1624,7 @@ textarea:focus {
 	text-transform: uppercase;
 	width: 100%;
 	font-weight: bold;
-	font-family: 'Montserrat', sans-serif;
+	font-family: "Poppins", sans-serif;
 	margin-top: 10px;
 }
 .minicart .minicart-total span {
@@ -1633,7 +1633,7 @@ textarea:focus {
 }
 .li-button {
 	display: inline-block;
-	font-family: 'Montserrat', sans-serif;
+	font-family: "Poppins", sans-serif;
 	font-weight: 500;
 	font-size: 14px;
 	text-transform: uppercase;
@@ -2058,7 +2058,7 @@ textarea:focus {
 	color: #c8c8c8;
 	cursor: pointer;
 	display: inline-block;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Rubik', sans-serif;
 	font-size: 20px;
 	font-weight: 500;
 	line-height: 18px;
@@ -4103,7 +4103,7 @@ thead {
 	text-transform: uppercase;
 	position: relative;
 	margin-bottom: 52px;
-	font-family: 'Montserrat';
+	font-family: Poppins;
 }
 .li-blog-sidebar .li-blog-sidebar-title::before {
 	width: 55px;
@@ -4171,7 +4171,7 @@ thead {
 	line-height: 30px;
 	font-weight: 600;
 	text-transform: capitalize;
-	font-family: 'Montserrat';
+	font-family: Poppins;
 	padding-bottom: 15px;
 	margin: 0;
 }

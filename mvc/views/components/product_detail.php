@@ -2,7 +2,7 @@
     <div class="container">
         <div class="breadcrumb-content">
             <ul>
-                <li><a href="http://localhost/Laptrinhweb/Home">Home</a></li>
+                <li><a href="http://localhost/Laptrinhweb/Home">Trang chủ</a></li>
                 <a href="http://localhost/Laptrinhweb/Home/productList/<?php echo $data["category_id"];?>"><li class="active"><?php echo $data["productCategory"];?></li></a>
             </ul>   
         </div>
@@ -29,15 +29,6 @@
                             <div class="product-details-view-content pt-60">
                                 <div class="product-info">
                                     <h2><?php echo $data["productItem"]["title"]; ?></h2>
-                                    <div class="rating-box pt-20">
-                                        <ul class="rating rating-with-review-item">
-                                            <li><i class="fa fa-star-o"></i></li>
-                                            <li><i class="fa fa-star-o"></i></li>
-                                            <li><i class="fa fa-star-o"></i></li>
-                                            <li class="no-star"><i class="fa fa-star-o"></i></li>
-                                            <li class="no-star"><i class="fa fa-star-o"></i></li>
-                                        </ul>
-                                    </div>
                                     <div class="price-box pt-20">
                                         <span class="new-price new-price-2"><?php echo number_format($data["productItem"]["price"]); ?>VNĐ</span>
                                     </div>
@@ -71,34 +62,6 @@
                                                 <li class="instagram"><a href="#"><i class="fa fa-instagram"></i>Instagram</a></li>
                                             </ul>
                                         </div>
-                                    </div>
-                                    <div class="block-reassurance">
-                                        <ul>
-                                            <li>
-                                                <div class="reassurance-item">
-                                                    <div class="reassurance-icon">
-                                                        <i class="fa fa-check-square-o"></i>
-                                                    </div>
-                                                    <p>Security policy (edit with Customer reassurance module)</p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="reassurance-item">
-                                                    <div class="reassurance-icon">
-                                                        <i class="fa fa-truck"></i>
-                                                    </div>
-                                                    <p>Delivery policy (edit with Customer reassurance module)</p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="reassurance-item">
-                                                    <div class="reassurance-icon">
-                                                        <i class="fa fa-exchange"></i>
-                                                    </div>
-                                                    <p> Return policy (edit with Customer reassurance module)</p>
-                                                </div>
-                                            </li>
-                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -167,20 +130,6 @@
                                                 </div>
                                                 <div class="product_desc">
                                                     <div class="product_desc_info">
-                                                        <div class="product-review">
-                                                            <h5 class="manufacturer">
-                                                                <a href="product-details.html">Graphic Corner</a>
-                                                            </h5>
-                                                            <div class="rating-box">
-                                                                <ul class="rating">
-                                                                    <li><i class="fa fa-star-o"></i></li>
-                                                                    <li><i class="fa fa-star-o"></i></li>
-                                                                    <li><i class="fa fa-star-o"></i></li>
-                                                                    <li class="no-star"><i class="fa fa-star-o"></i></li>
-                                                                    <li class="no-star"><i class="fa fa-star-o"></i></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
                                                         <h4><a class="product_name" href="http://localhost/Laptrinhweb/Home/productDetail/'.$data["allProductCategory"][$i]["id"].'">'.$data["allProductCategory"][$i]["title"].'</a></h4>
                                                         <div class="price-box">
                                                             <span class="new-price">'.$data["allProductCategory"][$i]["price"].' VNĐ</span>

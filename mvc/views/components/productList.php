@@ -5,7 +5,7 @@
                 <!-- Begin Li's Banner Area -->
                 <div class="single-banner shop-page-banner">
                     <a href="#">
-                        <img src="http://localhost/Laptrinhweb/public/images/bg-banner/2.jpg" alt="Li's Static Banner">
+                        <img src="http://localhost/Laptrinhweb/public/images/2.jpg" alt="Li's Static Banner">
                     </a>
                 </div>
                 <!-- Li's Banner Area End Here -->
@@ -63,20 +63,6 @@
                                         </div>
                                         <div class="product_desc">
                                             <div class="product_desc_info">
-                                                <div class="product-review">
-                                                    <h5 class="manufacturer">
-                                                        <a href="http://localhost/Laptrinhweb/Home/productDetail/'.$data["allProductCategory"][$i]["id"].'">Graphic Corner</a>
-                                                    </h5>
-                                                    <div class="rating-box">
-                                                        <ul class="rating">
-                                                            <li><i class="fa fa-star-o"></i></li>
-                                                            <li><i class="fa fa-star-o"></i></li>
-                                                            <li><i class="fa fa-star-o"></i></li>
-                                                            <li class="no-star"><i class="fa fa-star-o"></i></li>
-                                                            <li class="no-star"><i class="fa fa-star-o"></i></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
                                                 <h4><a class="product_name" href="http://localhost/Laptrinhweb/Home/productDetail/'.$data["allProductCategory"][$i]["id"].'">'.$data["allProductCategory"][$i]["title"].'</a></h4>
                                                 <div class="price-box">
                                                     <span class="new-price">'.number_format($data["allProductCategory"][$i]["price"]).' VNĐ</span>
