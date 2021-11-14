@@ -11,7 +11,7 @@ class Home extends Controller{
     }
 
     function SayHi() {
-        $allProduct = $this->productModel->getAllProduct();
+        $allProduct = $this->productModel->getAllProduct(1);
         $this->view("home",[
             "render"=>"home",
             "countProduct"=>count($allProduct),
@@ -23,7 +23,7 @@ class Home extends Controller{
     public function productDetail($id){
         $productItem = $this->productModel->selectProduct($id);
         $category_id = $productItem["category_id"];
-        $allProductCategory = $this->productModel->selectProductCategory($category_id);
+        $allProductCategory = $this->productModel->selectProductCategory($category_id,1);
         $productCategory = $this->categoryModel->selectCategory($category_id);
         $this->view("home",[
             "render"=>"productDetail",
@@ -35,12 +35,12 @@ class Home extends Controller{
         ]);
     }
 
-    public function productList($category_id = 0, $page = 1){
+    public function productList($category_id = 0, $page = 1, $fillter=1){
         if($category_id == 0){
             for($i=0;$i<count($this->allCategory);$i++){
                 $category[$i] = $this->allCategory[$i]["id"];
             }
-            $allProductCategory = $this->productModel->getAllProduct();
+            $allProductCategory = $this->productModel->getAllProduct($fillter);
             $currentIndex = ($page-1) * 9;
             $countAllProduct = count($allProductCategory);
             $numPages = ceil($countAllProduct/9);
@@ -51,11 +51,12 @@ class Home extends Controller{
                 "category_id"=>$category_id,
                 "numPages"=>$numPages,
                 "currentIndex"=>$currentIndex,
-                "pages"=>$page
+                "pages"=>$page,
+                "fillter"=>$fillter
             ]);
         }
         else {
-            $allProductCategory = $this->productModel->selectProductCategory($category_id);
+            $allProductCategory = $this->productModel->selectProductCategory($category_id,$fillter);
             $currentIndex = ($page-1) * 9;
             $countAllProduct = count($allProductCategory);
             $numPages = ceil($countAllProduct/9);
@@ -66,7 +67,8 @@ class Home extends Controller{
                 "category_id"=>$category_id,
                 "numPages"=>$numPages,
                 "currentIndex"=>$currentIndex,
-                "pages"=>$page
+                "pages"=>$page,
+                "fillter"=>$fillter
             ]);
         }
     }

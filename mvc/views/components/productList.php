@@ -30,17 +30,21 @@
                         </div>
                     </div>
                     <!-- product-select-box start -->
-                    <div class="product-select-box">
+                    <button style="border-radius: 15px;background-color:<?php if($data["fillter"] == 1) echo "#923e3e"; else echo "#b86969"; ?>"><a style="color:white" href="http://localhost/Laptrinhweb/Home/productList/<?php echo $data["category_id"] ?>/1/1">Giá (Cao &gt; Thấp)</a></button>
+                    <button style="border-radius: 15px;background-color:<?php if($data["fillter"] == 2) echo "#923e3e"; else echo "#b86969"; ?>"><a style="color:white" href="http://localhost/Laptrinhweb/Home/productList/<?php echo $data["category_id"] ?>/1/2">Giá (Thấp &gt; Cao)</a></button>
+                    <button style="border-radius: 15px;background-color:<?php if($data["fillter"] == 3) echo "#923e3e"; else echo "#b86969"; ?>"><a style="color:white" href="http://localhost/Laptrinhweb/Home/productList/<?php echo $data["category_id"] ?>/1/3">Tên (A - Z)</a></button>
+                    <button style="border-radius: 15px;background-color:<?php if($data["fillter"] == 4) echo "#923e3e"; else echo "#b86969"; ?>"><a style="color:white" href="http://localhost/Laptrinhweb/Home/productList/<?php echo $data["category_id"] ?>/1/4">Tên (Z - A)</a></button>
+                    <!-- <div class="product-select-box">
                         <div class="product-short">
                             <p>Bộ lọc</p>
                             <select class="nice-select">
-                                <option value="sales">Name (A - Z)</option>
-                                <option value="sales">Name (Z - A)</option>
-                                <option value="rating">Price (Low &gt; High)</option>
-                                <option value="date">Rating (Lowest)</option>
+                                <a href="#"><option value="1">Giá (Cao &gt; Thấp)</option></a> 
+                                <option value="2"><a href="#">Giá (Thấp &gt; Cao)</a></option>
+                                <option value="3">Name (A - Z)</option>
+                                <option value="4">Name (Z - A)</option>
                             </select>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- product-select-box end -->
                 </div>
                 <!-- shop-top-bar end -->
