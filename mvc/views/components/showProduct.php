@@ -36,11 +36,7 @@
                                                                 </div>
                                                                 </div>
                                                             <div class="add-actions">
-                                                                <ul class="add-actions-link">
-                                                                    <li onclick="addToCard('.$data["allProduct"][$j]["id"].','.$data["allProduct"][$j]["price"].')" class="add-cart active">Thêm vào giỏ</li>
-                                                                    <li><a class="links-details" href="wishlist.html"><i class="fa fa-heart-o"></i></a></li>
-                                                                    <li><a href="#" title="quick view" class="quick-view-btn" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-eye"></i></a></li>
-                                                                </ul>
+                                                                <button class="btnproduct" onclick="addToCard('.$data["allProduct"][$j]["id"].','.$data["allProduct"][$j]["price"].')" >Thêm vào giỏ</button>
                                                             </div>
                                                         </div>
                                                     </div>

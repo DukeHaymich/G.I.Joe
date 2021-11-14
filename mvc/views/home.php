@@ -24,6 +24,4 @@ else if($data["render"] == "tintuc"){
     require_once "mvc/views/components/tintuc.php";
 }
 
-
-
 require_once "mvc/views/blocks/footer.php";
