@@ -227,7 +227,6 @@ class Home extends Controller{
         $this->view("home",[
             "render"=>"orderDetail",
             "detailOrder"=>$detailorder,
-            "allCategory"=>$this->allCategory,
             "orderItem"=>$orderItem
         ]);
     }
