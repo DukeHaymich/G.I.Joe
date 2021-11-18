@@ -11,19 +11,28 @@ class Home extends Controller{
     }
 
     function SayHi() {
-        $allProduct = $this->productModel->getAllProduct();
+        $productVsmart = $this->productModel->selectProductCategory(1,1);
+        $productIphone = $this->productModel->selectProductCategory(2,1);
+        $productSamsung = $this->productModel->selectProductCategory(3,1);
+        $productXiaomi = $this->productModel->selectProductCategory(102,1);
+        $productOppo = $this->productModel->selectProductCategory(104,1);
         $this->view("home",[
             "render"=>"home",
-            "countProduct"=>count($allProduct),
             "allCategory"=>$this->allCategory,
-            "allProduct"=>$allProduct
+            "productVsmart"=>$productVsmart,
+            "productIphone"=>$productIphone,
+            "productSamsung"=>$productSamsung,
+            "productXiaomi"=>$productXiaomi,
+            "productOppo"=>$productOppo
         ]);   
     }
 
     public function productDetail($id){
+        $feedbackModel = $this->model("FeedbackModel");
+        $feedbackProduct = $feedbackModel->getFeedbackProduct($id);
         $productItem = $this->productModel->selectProduct($id);
         $category_id = $productItem["category_id"];
-        $allProductCategory = $this->productModel->selectProductCategory($category_id);
+        $allProductCategory = $this->productModel->selectProductCategory($category_id,1);
         $productCategory = $this->categoryModel->selectCategory($category_id);
         $this->view("home",[
             "render"=>"productDetail",
@@ -31,19 +40,20 @@ class Home extends Controller{
             "productCategory"=>$productCategory,
             "allProductCategory"=>$allProductCategory,
             "category_id"=>$category_id,
-            "allCategory"=>$this->allCategory
+            "allCategory"=>$this->allCategory,
+            "feedbackProduct"=>$feedbackProduct
         ]);
     }
 
-    public function productList($category_id = 0, $page = 1){
+    public function productList($category_id = 0, $page = 1, $fillter=1){
         if($category_id == 0){
             for($i=0;$i<count($this->allCategory);$i++){
                 $category[$i] = $this->allCategory[$i]["id"];
             }
-            $allProductCategory = $this->productModel->getAllProduct();
-            $currentIndex = ($page-1) * 9;
+            $allProductCategory = $this->productModel->getAllProduct($fillter);
+            $currentIndex = ($page-1) * 12;
             $countAllProduct = count($allProductCategory);
-            $numPages = ceil($countAllProduct/9);
+            $numPages = ceil($countAllProduct/12);
             $this->view("home",[
                 "render"=>"productList",
                 "allProductCategory"=>$allProductCategory,
@@ -51,14 +61,15 @@ class Home extends Controller{
                 "category_id"=>$category_id,
                 "numPages"=>$numPages,
                 "currentIndex"=>$currentIndex,
-                "pages"=>$page
+                "pages"=>$page,
+                "fillter"=>$fillter
             ]);
         }
         else {
-            $allProductCategory = $this->productModel->selectProductCategory($category_id);
-            $currentIndex = ($page-1) * 9;
+            $allProductCategory = $this->productModel->selectProductCategory($category_id,$fillter);
+            $currentIndex = ($page-1) * 12;
             $countAllProduct = count($allProductCategory);
-            $numPages = ceil($countAllProduct/9);
+            $numPages = ceil($countAllProduct/12);
             $this->view("home",[
                 "render"=>"productList",
                 "allProductCategory"=>$allProductCategory,
@@ -66,7 +77,8 @@ class Home extends Controller{
                 "category_id"=>$category_id,
                 "numPages"=>$numPages,
                 "currentIndex"=>$currentIndex,
-                "pages"=>$page
+                "pages"=>$page,
+                "fillter"=>$fillter
             ]);
         }
     }
@@ -104,11 +116,11 @@ class Home extends Controller{
     }
 
     public function addToCart(){
+        header('Location: http://localhost/Laptrinhweb/Login');
         if(!empty($_POST)) {
             $action = getPost('action');
             $id = getPost('productId');
             $num = getPost('num');
-            $priceProduct = getPost('priceProduct');     
 
             $cart = [];
             if(isset($_COOKIE['cart'])) {
@@ -122,7 +134,6 @@ class Home extends Controller{
                     for ($i=0; $i < count($cart); $i++) { 
                         if($cart[$i]['id'] == $id) {
                             $cart[$i]['num'] += $num;
-                            $cart[$i]['priceProduct'] = $priceProduct;
                             $isFind = true;
                             break;
                         }
@@ -131,14 +142,37 @@ class Home extends Controller{
                     if(!$isFind) {
                         $cart[] = [
                             'id'=>$id,
-                            'num'=>$num,
-                            'priceProduct'=> $priceProduct
+                            'num'=>$num
                         ];
                     }
                     setcookie('cart', json_encode($cart), time() + 30*24*60*60, '/');
                     break;
             }
         }
+    }
+
+    public function checkout($total){
+        
+        $this->view("home",[
+            "render"=>"checkout",
+            "allCategory"=>$this->allCategory,
+            "totalMoney"=>$total
+        ]);
+    }
+
+    public function paymentOnline($total){
+        
+        $this->view("home",[
+            "render"=>"paymentOnline",
+            "allCategory"=>$this->allCategory,
+            "totalMoney"=>$total
+        ]);
+    }
+    
+    public function succesOrder(){
+        
+        $this->view("succesOrder",[
+        ]);
     }
 
     public function deleteCart(){
@@ -167,6 +201,49 @@ class Home extends Controller{
         echo $id;
     }
 
+    public function quanlytaikhoan(){
+        
+        $this->view("home",[
+            "render"=>"quanlytaikhoan",
+            "allCategory"=>$this->allCategory
+        ]);
+    }
+
+    public function quanlydonhang($user_id){
+        $orderSuccessModel = $this->model("OrderModel");
+        $orderItem = $orderSuccessModel->getorders($user_id);
+
+        $this->view("home",[
+            "render"=>"quanlydonhang",
+            "allCategory"=>$this->allCategory,
+            "orderItem"=> $orderItem
+        ]);
+    }
+
+    public function detailOrderUser($id) {
+        $orderModel = $this->model("OrderModel");
+        $detailorder = $orderModel->getDetailOrder($id);
+        $orderItem = $orderModel->getOrderItem($id);
+        $this->view("home",[
+            "render"=>"orderDetail",
+            "detailOrder"=>$detailorder,
+            "allCategory"=>$this->allCategory,
+            "orderItem"=>$orderItem
+        ]);
+    }
+
+    public function confirmOrder($orderId, $user_id){
+        $orderSuccessModel = $this->model("OrderModel");
+        $orderSuccessModel->updateStatusOrder($orderId);
+        $orderItem = $orderSuccessModel->getorders($user_id);
+
+        $this->view("home",[
+            "render"=>"quanlydonhang",
+            "allCategory"=>$this->allCategory,
+            "orderItem"=> $orderItem
+        ]);
+    }
+
     public function contact(){
 
         $this->view("home",[
@@ -179,6 +256,14 @@ class Home extends Controller{
 
         $this->view("home",[
             "render"=>"gioithieu",
+            "allCategory"=>$this->allCategory
+        ]);
+    }
+
+    public function tintuc(){
+    
+        $this->view("home",[
+            "render"=>"tintuc",
             "allCategory"=>$this->allCategory
         ]);
     }
