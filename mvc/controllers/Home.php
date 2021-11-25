@@ -266,6 +266,65 @@ class Home extends Controller{
             "allCategory"=>$this->allCategory
         ]);
     }
+
+    public function search_buttuon(){
+        if(isset($_POST)){
+            $page = 1;
+            $search_name = $_POST["search_name"];
+            $allProductCategory = $this->productModel->searchProduct($search_name);
+            $currentIndex = ($page-1) * 12;
+            $countAllProduct = count($allProductCategory);
+            $numPages = ceil($countAllProduct/12);
+            $category_id = $fillter = 0;
+            $this->view("home",[
+                "render"=>"productList",
+                "allProductCategory"=>$allProductCategory,
+                "allCategory"=>$this->allCategory,
+                "category_id"=>$category_id,
+                "numPages"=>$numPages,
+                "currentIndex"=>$currentIndex,
+                "pages"=>$page,
+                "fillter"=>$fillter
+            ]);
+        }
+    }
+
+    public function search()
+    {
+        if (isset($_POST["action"])) {
+            
+            $search_name = $_POST["search_name"];
+
+            $result = $this->productModel->searchProduct($search_name);
+            $output ='<i style="right: 10px;position: absolute;top: 4px;z-index:9999" class="fas fa-times"></i>';
+            foreach ($result as $rows) {
+                
+                $output .='
+                <li style="margin: 5px 0;" class="list-group">
+                    <div style="margin: 0 auto;" class="row">
+                        <div class="col-4" style="">
+                            <div class="image">
+                            <a href="http://localhost/Laptrinhweb/Home/productDetail/'.$rows["id"].'"><img src="'.$rows["thumbnail"].'" style="width: 75%;padding-right: 0;"></a>
+                            </div>
+                        </div>
+                        <div class="col-8" style="">
+                            <div class="name-product">
+                                <a href="http://localhost/Laptrinhweb/Home/productDetail/'.$rows["id"].'">'.$rows["title"].'</a>
+                            </div>
+                            <div class="price">
+                                <p>'.number_format($rows["price"]).'&nbspVNĐ</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                ';
+            }
+            if($output == '<i style="right: 10px;position: absolute;top: 4px;z-index:9999" class="fas fa-times"></i>')
+                $output .= '<li style="margin: 5px 0;" class="list-group">
+                            Không tìm thấy sản phẩm</li>';
+            echo $output;
+        }
+    }
 }
 
 ?>

@@ -119,6 +119,12 @@
         </nav>
     </div>
 <script type="text/javascript">
+    $(document).ready(function(){
+		$(".btnOrder").click(function(){
+            $("#alertSuccess").html('<p style="background-color: #55e073;padding: 10px;"><i class="fas fa-check-circle"></i>Thêm vào giỏ hàng thành công</p>');
+		});
+	});
+    
     function addToCard(productId, priceProduct) {
         var action = "add";
         $.ajax({

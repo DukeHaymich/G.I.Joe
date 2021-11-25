@@ -75,6 +75,16 @@ class ProductModel extends DB{
         $cartList = $this->executeResult($sql);
         return $cartList;
     }
+
+    public function searchProduct($name){
+
+        $sql ="SELECT * FROM `product` 
+                WHERE title LIKE '%$name%' 
+                order by id 
+                DESC LIMIT 5";
+        $searchProducts = $this->executeResult($sql);
+        return $searchProducts;
+    }
 }
 
 
