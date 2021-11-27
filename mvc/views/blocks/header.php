@@ -52,7 +52,7 @@
     <body>
             <!-- Begin Header -->
             <nav id="navColor" class=" navbar fixed-top navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="http://localhost/Laptrinhweb/Home">PhoneStore</a>
+                <a class="navbar-brand" href="http://localhost/Laptrinhweb/Home"><img src="public/logophonestore.svg" alt="G.I.Joe"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
