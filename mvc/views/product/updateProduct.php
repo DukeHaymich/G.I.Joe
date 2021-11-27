@@ -1,7 +1,7 @@
 <?php
-	$title = 'Thêm/Sửa Sản Phẩm';
-    $isActive = "ProductAdmin";
-	require_once('mvc/views/blocks/header_admin.php');
+$title = 'Thêm/Sửa Sản Phẩm';
+$isActive = "ProductAdmin";
+require_once('mvc/views/blocks/header_admin.php');
 
 ?>
 <!-- include summernote css/js -->
@@ -18,44 +18,43 @@
                         <div class="col-md-9 col-12">
                             <div class="form-group">
                                 <label for="usr">Tên Sản Phẩm:</label>
-                                <input required="true" type="text" class="form-control" id="usr" name="title" value="<?=$data["title"]?>">
-                                <input type="text" name="id" value="<?=$data["id"]?>" hidden="true">
+                                <input required="true" type="text" class="form-control" id="usr" name="title" value="<?= $data["title"] ?>">
+                                <input type="text" name="id" value="<?= $data["id"] ?>" hidden="true">
                             </div>
                             <div class="form-group">
                                 <label for="pwd">Nội Dung:</label>
-                                <textarea class="form-control" rows="5" name="description" id="description" value="<?=$data["description"]?>"></textarea>
+                                <textarea class="form-control" rows="5" name="description" id="description"><?php echo $data["description"]; ?></textarea>
                             </div>
                             <div class="form-group">
                                 <label for="thumbnail">Thumbnail:</label>
-                                <input type="text" class="form-control" id="thumbnail" name="thumbnail" value="<?=$data["thumbnail"]?>">
+                                <input type="text" class="form-control" id="thumbnail" name="thumbnail" value="<?= $data["thumbnail"] ?>">
                                 <img id="thumbnail_img" src="" style="max-height: 160px; margin-top: 5px; margin-bottom: 15px;">
                             </div>
                             <div class="form-group">
-                            <label for="usr">Danh Mục Sản Phẩm:</label>
-                            <select class="form-control" name="category_id" id="category_id" required="true" >
-                                <option value="">-- Chọn --</option>
-                                <?php
-                                $countCategory = count($data["category"]);
-						  		for($i=0; $i < $countCategory; $i++) {
-                                    if($data['category'][$i]['id'] == $data["category_id"]) {
-                                        echo '<option selected value="'.$data["category"][$i]['id'].'">'.$data["category"][$i]['name'].'</option>';
+                                <label for="usr">Danh Mục Sản Phẩm:</label>
+                                <select class="form-control" name="category_id" id="category_id" required="true">
+                                    <option value="">-- Chọn --</option>
+                                    <?php
+                                    $countCategory = count($data["category"]);
+                                    for ($i = 0; $i < $countCategory; $i++) {
+                                        if ($data['category'][$i]['id'] == $data["category_id"]) {
+                                            echo '<option selected value="' . $data["category"][$i]['id'] . '">' . $data["category"][$i]['name'] . '</option>';
+                                        } else echo '<option value="' . $data["category"][$i]['id'] . '">' . $data["category"][$i]['name'] . '</option>';
                                     }
-                                    else echo '<option value="'.$data["category"][$i]['id'].'">'.$data["category"][$i]['name'].'</option>';
-						  		}
-						  	?>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="price">Giá:</label>
-                            <input required="true" type="number" class="form-control" id="price" name="price" value="<?=$data["price"]?>">
-                        </div>
-                        <div class="form-group">
-                            <label for="discount">Giảm Giá:</label>
-                            <input type="text" class="form-control" id="discount" name="discount" value="<?=$data["discount"]?>">
-                        </div>                            
+                                    ?>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="price">Giá:</label>
+                                <input required="true" type="number" class="form-control" id="price" name="price" value="<?= $data["price"] ?>">
+                            </div>
+                            <div class="form-group">
+                                <label for="discount">Giảm Giá:</label>
+                                <input type="text" class="form-control" id="discount" name="discount" value="<?= $data["discount"] ?>">
+                            </div>
                             <button class="btn btn-success">Lưu Sản Phẩm</button>
                         </div>
-                        
+
                     </div>
 
                 </form>
@@ -65,5 +64,5 @@
 </div>
 
 <?php
-	require_once('mvc/views/blocks/footer_admin.php');
+require_once('mvc/views/blocks/footer_admin.php');
 ?>
